@@ -1,0 +1,26 @@
+{
+  "name": "elastii",
+  "version": "1.0.0",
+  "description": "The most reliable and lightweight solution to get a masonary look alike layout.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cipherlogs/elastii.git"
+  },
+  "keywords": [
+    "masonary",
+    "css-grid",
+    "fixed-layout",
+    "gallery-layout",
+    "gallery-grid"
+  ],
+  "author": "cipherlogs",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/cipherlogs/elastii/issues"
+  },
+  "homepage": "https://github.com/cipherlogs/elastii#readme"
+}
