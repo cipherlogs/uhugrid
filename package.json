@@ -1,26 +1,27 @@
 {
-  "name": "elastii",
+  "name": "UHUGRID",
   "version": "1.0.0",
-  "description": "The most reliable and lightweight solution to get a masonary look alike layout.",
+  "description": "The fastest & lightweight gallery grid layout!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cipherlogs/elastii.git"
+    "url": "git+https://github.com/cipherlogs/uhugrid.git"
   },
   "keywords": [
     "masonary",
     "css-grid",
     "fixed-layout",
     "gallery-layout",
-    "gallery-grid"
+    "gallery-grid",
+    "automatic-layout"
   ],
   "author": "cipherlogs",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/cipherlogs/elastii/issues"
+    "url": "https://github.com/cipherlogs/uhugrid/issues"
   },
-  "homepage": "https://github.com/cipherlogs/elastii#readme"
+  "homepage": "https://github.com/cipherlogs/uhugrid#readme"
 }
