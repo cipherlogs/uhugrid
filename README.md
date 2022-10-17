@@ -1,68 +1,99 @@
-# Elastii
-The most reliable and lightweight solution to place container's
+# UHU GRID
+Reliable and lightweight solution to place container's
 items in optimal position based on available horizantal space.
 
-**Elastii** will generate random sizes that will fit in that
-available space thus the layout will always be different each time
-you refresh the page.
+By default, all items will glue with each other *UHU glue*,
+not allowing any free space to be wasted.
 
+**UHUGRID** will generate random sizes that are pleasing to the eye
+and are guaranteed to fit in the available free space.
+
+The layout will always be different each time you refresh the page
+or request a new one while keeping the same order you have
+in you HTML markup.
+
+
+<br>
 
 # Motivation!
 
-+ **Elastii** is hardly doing any calculation, that's why
-  it is super fast and snappy no matter how many time you request
-  a layout change.
++ **UHUGRID** is hardly doing any calculation, that's why
+  it is fast and snappy no matter how many time a layout change
+  is requested.
 
-+ No media queries were used and the layout is fully responsive.
++ No media queries were used and the layout is fully responsive
+  and it scales up to 4K displays or beyond.
 
-+ the item order will always stay as your HTML markup order,
-  unlike `grid-auto-flow: dense` or `flex-box`
++ the items order will always stay the way you wrote them in your
+  HTML markup, unlike other solutions that uses
+  `grid-auto-flow: dense` or `flex-box`.
 
 
-# How to?
-include a video of how to.
+<br>
 
+# How to
+Before you read the documentation, watch this 3min video
+to understand some basics that will save you headaches later.
+
+**Add image later**
+[Watch it on YouTube](https://youtube.com)
+
+
+<br>
 
 # Install
+You can use **UHUGRID** in two ways
 
-```
-$ npm install --save-dev elastii
-```
-
-If you only want `plug&play` inject **Elastii** to your HTML,
-the rest will be taken care of.
+#### Plug & Play
+You inject it in you HTML markup and the rest will be taken care of!
 
 ```HTML
-<script defer src="./node_modules/elastii/min.js"></script>
+<script defer src="CDN link"></script>
 ```
 
-Or you can import it and use the API the way you like
+#### NPM
+You use npm to install it, then import it to you JavaScript file,
+this way you will have access to the API so that you can control
+the layout changes the way you want.
+
+```
+$ npm install --save-dev uhugrid
+```
 
 ```JavaScript
-import {grid} from "elastii";
+import {uhu} from "uhugrid";
 ```
 
 
+<br>
+
 # Usage
-Inject **Elastii** in your markup, then use `.gallery` for the
-container and `.gallery__item` for all its children.
+Use the CSS class `.gallery` for the container
+and `.gallery__item` for all its children.
+
 
 ```HTML
 <div class="gallery">
-  <div class="gallery__item">
-    <img src="" alt="">
-  </div>
 
   <div class="gallery__item">
-    <img src="" alt="">
+    <!-- PLACE WHEREVER YOU WANT IN HERE -->
   </div>
+
 </div>
 ```
 
-**Elastii** only focuses on providing the gallery functionality
-without any hustle.
-You have to later style all classes to your taste.
+**UHUGRID** only comes with the basic styling that's needed for
+it to function properly. It is up to you to style `.gallery__item`
+and its content the way want.
+
+Overriding `.gallery` and `.gallery__item` is the correct way
+the library was intended to be used.
+However please watch the [**How to**](#how-to) video, to understand
+some important details before you override any styles.
+
+
+<br>
 
 # License
-**Elastii** is released under the GPL-3.0 license.
+**UHUGRID** is released under the GPL-3.0 license.
 
