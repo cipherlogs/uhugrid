@@ -20,7 +20,18 @@ in you HTML markup.
 
 <br>
 
-![Gallery layout example](./imgs/1.jpg)
+<p align="center">
+  <img src="./imgs/1.jpg" alt="Gallery layout example">
+</p>
+
+<br>
+
+# How to
+Before you read the documentation, watch this 3min video
+to understand some basics that will save you headaches later.
+
+**Add image later**
+[Watch it on YouTube](https://youtube.com)
 
 <br>
 
@@ -42,16 +53,6 @@ to access a simple live example of **UHUGRID**.
 + the items order will always stay the way you wrote them in your
   HTML markup, unlike other solutions that uses
   `grid-auto-flow: dense` or `flex-box`.
-
-
-<br>
-
-# How to
-Before you read the documentation, watch this 3min video
-to understand some basics that will save you headaches later.
-
-**Add image later**
-[Watch it on YouTube](https://youtube.com)
 
 
 <br>
@@ -241,7 +242,7 @@ In real world scenarios, the event will fire 2 to 5 times max.
 
 <br>
 
-# Log & Upcoming changes
+# Upcoming changes
 
 + by default **UHUGRID** selects the first `.gallery` in your
   markup, in the upcoming changes the option to select more will

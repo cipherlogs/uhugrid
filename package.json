@@ -16,7 +16,15 @@
     "fixed-layout",
     "gallery-layout",
     "gallery-grid",
-    "automatic-layout"
+    "automatic-layout",
+    "css-grid",
+    "masonry",
+    "mosaic-images",
+    "mosaic",
+    "masonry-layout",
+    "masonry-grid",
+    "masonry-js",
+    "grid-css"
   ],
   "author": "cipherlogs",
   "license": "GPL-3.0",
