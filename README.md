@@ -57,9 +57,11 @@ to understand some basics that will save you headaches later.
 <br>
 
 # Install
-You can use **UHUGRID** in two ways
+You can inject **UHUGRID** in two ways
 
-#### Plug & Play
+### 1. CDN
+
+#### 1.1 Plug & Play
 You inject it in you HTML markup and the rest will be taken care of!
 
 ```HTML
@@ -71,6 +73,11 @@ You inject it in you HTML markup and the rest will be taken care of!
 </scripy>
 ```
 
+<br>
+
+#### 1.2 Main minified file
+To inject the **4kb** library you can use the following CDN
+
 ```HTML
 <scripy
   defer
@@ -80,7 +87,12 @@ You inject it in you HTML markup and the rest will be taken care of!
 </scripy>
 ```
 
-#### NPM
+the layout won't work by default, it is up to you to activate it
+the moment you want by using `uhu()` with the params you like.
+
+<br>
+
+### 2. NPM
 You use npm to install it, then import it to you JavaScript file,
 this way you will have access to the API so that you can control
 the layout changes the way you want.
