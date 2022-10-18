@@ -63,7 +63,21 @@ You can use **UHUGRID** in two ways
 You inject it in you HTML markup and the rest will be taken care of!
 
 ```HTML
-<script defer src="CDN link"></script>
+<scripy
+  defer
+  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/min.js"
+
+>
+</scripy>
+```
+
+```HTML
+<scripy
+  defer
+  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/uhu.min.js"
+
+>
+</scripy>
 ```
 
 #### NPM
