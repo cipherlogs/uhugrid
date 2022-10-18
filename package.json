@@ -1,7 +1,7 @@
 {
   "name": "uhugrid",
   "version": "1.0.0",
-  "description": "The fastest gallery layout!",
+  "description": "The fastest masonry/mosaic look alike layout!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
