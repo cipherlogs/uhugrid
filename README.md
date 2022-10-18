@@ -209,8 +209,11 @@ In real world scenarios, the event will fire 2 to 5 times max.
 
 <br>
 
-# Log
-N/A.
+# Log & Upcoming changes
+
++ by default **UHUGRID** selects the first `.gallery` in your
+  markup, in the upcoming changes the option to select more will
+  be added.
 
 
 <br>
