@@ -24,6 +24,12 @@ in you HTML markup.
 
 <br>
 
+# Live demo
+[Click here](https://cipherlogs.github.io/uhugrid/demo/)
+to access a simple live example of **UHUGRID**.
+
+<br>
+
 # Motivation!
 
 + **UHUGRID** is hardly doing any calculation, that's why
