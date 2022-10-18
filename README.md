@@ -1,3 +1,8 @@
+![UHUGRID poster](./imgs/uhu.png)
+
+<br>
+
+
 # UHU GRID
 Reliable and lightweight solution to place container's
 items in optimal position based on available horizantal space.
@@ -12,6 +17,10 @@ The layout will always be different each time you refresh the page
 or request a new one while keeping the same order you have
 in you HTML markup.
 
+
+<br>
+
+![Gallery layout example](./imgs/1.jpg)
 
 <br>
 
@@ -145,6 +154,9 @@ uhu(0, 2)
 <br>
 
 ### Can I use `grid-gap`?
+
+![Gallery layout example](./imgs/2.jpg)
+
 This library is fast because it is not trying to do many things,
 rather focusing and perfecting one main design.
 
