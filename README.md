@@ -67,7 +67,7 @@ You inject it in you HTML markup and the rest will be taken care of!
 ```HTML
 <scripy
   defer
-  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/min.js"
+  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/plug.min.js"
 
 >
 </scripy>
@@ -81,7 +81,7 @@ To inject the **4kb** library you can use the following CDN
 ```HTML
 <scripy
   defer
-  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/uhu.min.js"
+  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/main.min.js"
 
 >
 </scripy>

@@ -312,20 +312,6 @@ const update_grid_layout = (size, height) => {
   $ (window) (on ("resize") (update));
 };
 
-// slider
-const $size = select (".sizerange input");
-const $height = select (".heightrange input");
-const $update_btn = select (".update");
 
-const update_layout = () => update_grid_layout ($size.value, $height.value);
-
-// on page load
-update_layout ();
-
-// on events
-// $ (window) (on ("resize") (update_layout));
-$ ($size) (on ("input") (update_layout));
-$ ($height) (on ("input") (update_layout));
-$ ($update_btn) (on ("click") (update_layout));
-
-window.test = K;
+// Pollute the window object
+window.uhu = update_grid_layout;
