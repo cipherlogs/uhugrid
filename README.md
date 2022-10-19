@@ -30,8 +30,7 @@ in you HTML markup.
 Before you read the documentation, watch this 3min video
 to understand some basics that will save you headaches later.
 
-**Add image later**
-[Watch it on YouTube](https://youtube.com)
+[Watch it on YouTube](https://youtu.be/PT3ZhB4-Y40)
 
 <br>
 
