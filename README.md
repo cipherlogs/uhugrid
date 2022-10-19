@@ -27,7 +27,7 @@ in you HTML markup.
 <br>
 
 # How to
-Before you read the documentation, watch this 3min video
+Before you read the documentation, watch this video
 to understand some basics that will save you headaches later.
 
 [Watch it on YouTube](https://youtu.be/PT3ZhB4-Y40)
@@ -68,12 +68,12 @@ You can inject **UHUGRID** in two ways
 You inject it in you HTML markup and the rest will be taken care of!
 
 ```HTML
-<scripy
+<script
   defer
   src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/plug.min.js"
 
 >
-</scripy>
+</script>
 ```
 
 <br>
@@ -82,12 +82,12 @@ You inject it in you HTML markup and the rest will be taken care of!
 To inject the **4kb** library you can use the following CDN
 
 ```HTML
-<scripy
+<script
   defer
   src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/main.min.js"
 
 >
-</scripy>
+</script>
 ```
 
 the layout won't work by default, it is up to you to activate it
