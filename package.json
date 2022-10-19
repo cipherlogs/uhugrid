@@ -1,6 +1,6 @@
 {
   "name": "uhugrid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The fastest masonry/mosaic look alike layout!",
   "main": "index.js",
   "scripts": {

@@ -70,7 +70,7 @@ You inject it in you HTML markup and the rest will be taken care of!
 ```HTML
 <script
   defer
-  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/plug.min.js"
+  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.1/plug.min.js"
 
 >
 </script>
@@ -84,7 +84,7 @@ To inject the **4kb** library you can use the following CDN
 ```HTML
 <script
   defer
-  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.0/main.min.js"
+  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.1/main.min.js"
 
 >
 </script>
