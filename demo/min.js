@@ -320,12 +320,9 @@ const $update_btn = select (".update");
 const update_layout = () => update_grid_layout ($size.value, $height.value);
 
 // on page load
-update_layout ();
+update_grid_layout (1, 3);
 
 // on events
-// $ (window) (on ("resize") (update_layout));
 $ ($size) (on ("input") (update_layout));
 $ ($height) (on ("input") (update_layout));
 $ ($update_btn) (on ("click") (update_layout));
-
-window.test = K;

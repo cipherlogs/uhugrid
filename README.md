@@ -39,6 +39,9 @@ to understand some basics that will save you headaches later.
 [Click here](https://cipherlogs.github.io/uhugrid/demo/)
 to access a simple live example of **UHUGRID**.
 
+**PS:** the images that were used in the demo are low quality
+images, they are just there for demonstration purposes.
+
 <br>
 
 # Motivation!
@@ -213,7 +216,17 @@ and they demand more calculation.
 It is not worth it if the solution has a 1% chance of failure
 
 A better solution is to use something that looks like a gap,
-`Border` with `box-sizing: border-box;` enabled.
+we can use `Border` while `box-sizing` is set to `border-box`.
+
+*PS*: If you are going to use border as a gap, it is better
+to use it all over the item, not just `border-right`
+and `border-left`.
+
+If you look closely to the image above, there's a small aspect
+ratio mismatch, because we are using border for column gaps
+and `row-gap` for row gaps.
+
+Better use use border alone for perfect aesthetic results.
 
 <br>
 
