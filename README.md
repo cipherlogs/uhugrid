@@ -254,12 +254,9 @@ In real world scenarios, the event will fire 2 to 5 times max.
 
 <br>
 
-# Upcoming changes
-
-+ by default **UHUGRID** selects the first `.gallery` in your
-  markup, in the upcoming changes the option to select more will
-  be added.
-
+# Changes
+to know the upcoming changes, please take a look at the **Issues** tab.
+to read about the changes that were released recently, read CHANGELOG.md
 
 <br>
 
