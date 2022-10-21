@@ -4,33 +4,37 @@
 
 
 # UHU GRID
-Reliable and lightweight solution to place container's
-items in optimal position based on available horizantal space.
+Creative layouts like masonry (Pinterest style) and mosaic are used all over the web.
+**UHUGRID** is a new alternative
 
-By default, all items will glue with each other *UHU glue*,
-not allowing any free space to be wasted.
+It is fast and offers something none of the above could offer.
+**It generates items that are visually appealing**
+by using aspect ratios that are suited best for the available free space
+(1:1, 9:16, 16:9, 2:3, 5:4, 5:7, 3:2, 4:3 ...)
 
-**UHUGRID** will generate random sizes that are pleasing to the eye
-and are guaranteed to fit in the available free space.
-
-The layout will always be different each time you refresh the page
-or request a new one while keeping the same order you have
-in you HTML markup.
-
+It is named *UHU* because the default behaviour is to glue all items together
+while not allowing any free space to be wasted.
+Everytime you refresh the page or request a layout change,
+will get a different layout even if the screen size didn't change.
 
 <br>
 
-<p align="center">
-  <img src="./imgs/1.jpg" alt="Gallery layout example">
-</p>
++ hardly doing any calculation, fast and snappy 
+  no matter how many time a layout change is requested.
+
++ No media queries were used and the layout is fully responsive
+  and it scales up to 4K displays or beyond.
+
++ the item's order will always stay the same as your
+  HTML markup, unlike other solutions that uses
+  `grid-auto-flow: dense` or `flex-box`.
 
 <br>
 
 # How to
-Before you read the documentation, watch this video
-to understand some basics that will save you headaches later.
+Watch this walkthrough to understand some basics that might save you headaches later.
 
-[Watch it on YouTube](https://youtu.be/PT3ZhB4-Y40)
+[Watch on YouTube](https://youtu.be/PT3ZhB4-Y40)
 
 <br>
 
@@ -38,34 +42,24 @@ to understand some basics that will save you headaches later.
 [Click here](https://cipherlogs.github.io/uhugrid/demo/)
 to access a simple live example of **UHUGRID**.
 
+<p align="center">
+  <img src="./imgs/1.jpg" alt="Gallery layout example">
+</p>
+
+<br>
+
 **PS:** the images that were used in the demo are low quality
 images, they are just there for demonstration purposes.
 
 <br>
 
-# Motivation!
-
-+ **UHUGRID** is hardly doing any calculation, that's why
-  it is fast and snappy no matter how many time a layout change
-  is requested.
-
-+ No media queries were used and the layout is fully responsive
-  and it scales up to 4K displays or beyond.
-
-+ the items order will always stay the way you wrote them in your
-  HTML markup, unlike other solutions that uses
-  `grid-auto-flow: dense` or `flex-box`.
-
-
-<br>
-
 # Install
-You can inject **UHUGRID** in two ways
 
 ### 1. CDN
 
 #### 1.1 Plug & Play
-You inject it in you HTML markup and the rest will be taken care of!
+This version is when you want to use the default settings,
+just inject it in you HTML markup and the rest will be taken care of!
 
 ```HTML
 <script
@@ -79,7 +73,7 @@ You inject it in you HTML markup and the rest will be taken care of!
 <br>
 
 #### 1.2 Main minified file
-To inject the **4kb** library you can use the following CDN
+In case you want to have more control over how the layout will be rendered
 
 ```HTML
 <script
@@ -88,17 +82,14 @@ To inject the **4kb** library you can use the following CDN
 
 >
 </script>
-```
 
-the layout won't work by default, it is up to you to activate it
-the moment you want by using `uhu()` with the params you like.
+// `uhu()` will be added to the global scope, call it
+// to trigger the layout change with the settings you like.
+```
 
 <br>
 
 ### 2. NPM
-You use npm to install it, then import it to you JavaScript file,
-this way you will have access to the API so that you can control
-the layout changes the way you want.
 
 ```
 $ npm install --save-dev uhugrid
@@ -112,7 +103,7 @@ import {uhu} from "uhugrid";
 <br>
 
 # Usage
-Use the CSS class `.gallery` for the container
+`.gallery` for the parent container
 and `.gallery__item` for all its children.
 
 
@@ -126,13 +117,13 @@ and `.gallery__item` for all its children.
 </div>
 ```
 
-**UHUGRID** only comes with the basic styling that's needed for
+**UHUGRID** only comes with the basic styling that are needed for
 it to function properly. It is up to you to style `.gallery__item`
 and its content the way want.
 
 Overriding `.gallery` and `.gallery__item` is the correct way
 the library was intended to be used.
-However please watch the [**How to**](#how-to) video, to understand
+Please watch the [**How to**](#how-to) video, to understand
 some important details before you override any styles.
 
 
@@ -185,6 +176,13 @@ uhu(0, 2)
 <br>
 
 # FAQ
+
+<br>
+
+### Does it work for everything?
+No layout will, it depends on your design requirements.
+**UHUGRID** is perfect if you don't have too much text to fit in a box
+or if you have a gallery of images. 
 
 <br>
 
@@ -255,8 +253,9 @@ In real world scenarios, the event will fire 2 to 5 times max.
 <br>
 
 # Changes
-to know the upcoming changes, please take a look at the **Issues** tab.
-to read about the changes that were released recently, read CHANGELOG.md
+
++ for upcoming changes take a look at the **Issues** tab.
++ visit [CHANGELOG.md](./CHANGELOG.md) for more info about what changed on each release
 
 <br>
 
