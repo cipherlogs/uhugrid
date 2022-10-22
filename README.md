@@ -97,7 +97,7 @@ and `.gallery__item` for all its children.
 </div>
 ```
 
-**UHUGRID** only comes with the basic styling that are needed for
+The plugin only comes with the basic styling that are needed for
 it to function properly. It is up to you to style `.gallery__item`
 and its content the way want.
 
@@ -109,7 +109,7 @@ some important details before you override any styles.
 
 <br>
 
-# UHU
+### UHU
 
 The `uhu()` method controls the column size and the maximum height
 for each row.
