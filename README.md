@@ -56,10 +56,7 @@ images, they are just there for demonstration purposes.
 # Install
 
 ### 1. CDN
-
-#### 1.1 Plug & Play
-This version is when you want to use the default settings,
-just inject it in you HTML markup and the rest will be taken care of!
+Just inject it in you HTML markup and the rest will be taken care of!
 
 ```HTML
 <script
@@ -68,23 +65,6 @@ just inject it in you HTML markup and the rest will be taken care of!
 
 >
 </script>
-```
-
-<br>
-
-#### 1.2 Main minified file
-In case you want to have more control over how the layout will be rendered
-
-```HTML
-<script
-  defer
-  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.1/main.min.js"
-
->
-</script>
-
-// `uhu()` will be added to the global scope, call it
-// to trigger the layout change with the settings you like.
 ```
 
 <br>
