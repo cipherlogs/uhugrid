@@ -165,7 +165,8 @@ decisions.
 # Changes
 
 + for upcoming changes take a look at the **Issues** tab.
-+ visit [CHANGELOG.md](./CHANGELOG.md) for more info about what changed on each release
++ visit [CHANGELOG.md](./CHANGELOG.md) for more information about
+  each release.
 
 <br>
 
