@@ -18,7 +18,11 @@ const on = name => cb => element =>
 const from = element => target =>
   element.querySelectorAll (target)[0];
 
+const all = target =>
+  Array.from (document.querySelectorAll (target));
+
 // aliases
+const I = x => x;
 const K = x => y => x;
 const T = x => f => f (x);
 const $ = T;
@@ -205,13 +209,6 @@ const counter = start => {
   };
 };
 
-const template_span = index => col => row => factor => `
-  .gallery__item:nth-child(${index}) {
-    grid-area: span ${row} / span ${col};
-    height: ${factor * row}px
-  }
-`;
-
 const get_grid_factor = width => {
   const greater_than = x => gt (x) (width);
   return (
@@ -245,23 +242,32 @@ const update_grid = spec => {
     height,
   } = spec;
 
-  const index = counter (1);
   const height_per_row = height > 0 ? height : grid_size;
 
   const virtual_grid =
     grid (element_count) (height_per_row) (grid_size);
 
+  const gallery_items = all (".gallery__item");
+
+  const index = counter (0);
+
   const css = (
     virtual_grid
     .flat ()
     .reduce (
-      (css, [col, row]) =>
-        css += template_span (index ()) (col) (row) (factor),
-      ""
+      (f, [col, row]) =>
+        compose (f) (
+          () => {
+            const elem = gallery_items[index ()];
+            elem.style["grid-area"] = `span ${row} / span ${col}`;
+            elem.style.height = `${factor * row}px`
+          }
+        ),
+        I
     )
   );
 
-  inject_style (css);
+  css ();
 
   select (".gallery").style["grid-template-columns"] =
     `repeat(auto-fit, ${factor}px)`
