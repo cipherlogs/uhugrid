@@ -7,15 +7,14 @@
 Creative layouts like masonry (Pinterest style) and mosaic are used all over the web.
 **UHUGRID** is a new alternative
 
-It is fast and offers something none of the above could offer.
+It is fast and it offers something none of the above could offer.
 **It generates items that are visually appealing**
-by using aspect ratios that are suited best for the available free space
-(1:1, 9:16, 16:9, 2:3, 5:4, 5:7, 3:2, 4:3 ...)
+by using aspect ratios that are suited best for the available free space.
 
-It is named *UHU* because the default behaviour is to glue all items together
-while not allowing any free space to be wasted.
+Named *UHU* because of its default behaviour. Glue all items together
+and don't waste any free space.
 Everytime you refresh the page or request a layout change,
-will get a different layout even if the screen size didn't change.
+a new layout will be generated even if the screen size stays the same.
 
 <br>
 
