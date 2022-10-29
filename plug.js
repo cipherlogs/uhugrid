@@ -248,7 +248,8 @@ const update_grid = spec => {
   } = spec;
 
   const index = counter (1);
-  const height_per_row = height > 0 ? height : grid_size;
+  const height_per_row =
+    height > 0 ? height : rand (1) (3);
 
   const virtual_grid =
     grid (element_count) (height_per_row) (grid_size);
