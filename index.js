@@ -216,19 +216,19 @@ const get_grid_factor = width => {
   const greater_than = x => gt (x) (width);
   return (
     greater_than (4096)
-    ? 800
+    ? 512
     : (
       greater_than (3840)
-      ? 600
+      ? 640
       : (
         greater_than (2048)
-        ? 500
+        ? 512
         : (
           greater_than (1920)
-          ? 400
+          ? 480
           : (
             greater_than (1080)
-            ? 300
+            ? 360
             : greater_than (300) ? 200 : 150
           )
         )
