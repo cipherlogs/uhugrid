@@ -22,5 +22,5 @@ $ ($height) (on ("input") (update_layout));
 $ ($update_btn) (on ("click") (update_layout));
 
 // on page load
-uhu (1, 3);
+uhu ();
 
