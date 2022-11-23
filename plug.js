@@ -1,5 +1,3 @@
-"use strict";
-
 // utils
 const compose = f => g => x => f (g (x));
 
@@ -32,7 +30,7 @@ const gt = x => y => y > x;
 const eq = x => y => x === y;
 const nth = x => xs => xs[x];
 const head = xs => xs[0];
-const tail = xs => xs[xs.length - 1];
+const last = xs => xs[xs.length - 1];
 const is_zero = eq (0);
 const is_undef = eq (undefined);
 const length = x => x.length;
@@ -118,7 +116,7 @@ const inc_dec = acc => ([a, b]) => {
 
 const shuffle_ends = ys => {
   const shuffle = pipe ([
-    xs => inc_dec ([]) ([head (xs), tail (xs)]),
+    xs => inc_dec ([]) ([head (xs), last (xs)]),
     map (([a, b]) => [a, ...crop (ys), b]),
   ]);
 
@@ -214,29 +212,51 @@ const template_span = index => col => row => factor => `
   }
 `;
 
-const get_grid_factor = width => {
-  const greater_than = x => gt (x) (width);
-  return (
-    greater_than (4096)
-    ? 800
+const is_divisable_by = x => y =>
+  y % x === 0;
+
+const get_optimal_grid_size = width => {
+  const gt = x => width > x;
+  const optimal_grid_size =
+    gt (4000)
+    ? 12
     : (
-      greater_than (3840)
-      ? 600
+      gt (3000)
+      ? 10
       : (
-        greater_than (2048)
-        ? 500
+        gt (2000)
+        ? 8
         : (
-          greater_than (1920)
-          ? 400
+          gt (1200)
+          ? 6
           : (
-            greater_than (1080)
-            ? 300
-            : greater_than (300) ? 200 : 150
+            gt (1000)
+            ? 4
+            : (
+              gt (600)
+              ? 3
+              : 2
+            )
           )
         )
       )
-    )
-  );
+    );
+
+  return optimal_grid_size;
+};
+
+const get_grid_factor = width => {
+  const grid_size = get_optimal_grid_size (width);
+
+  const divisors =
+    range (1) (grid_size)
+    .map (num => (x => is_divisable_by (num) (x) ? num : undefined))
+    .map (T (width))
+    .filter (x => (x !== undefined && x <= grid_size));
+
+  const divisor = last (divisors);
+
+  return width / divisor;
 };
 
 const update_grid = spec => {
@@ -249,7 +269,7 @@ const update_grid = spec => {
 
   const index = counter (1);
   const height_per_row =
-    height > 0 ? height : rand (1) (3);
+    height > 0 ? height : rand (1) (2);
 
   const virtual_grid =
     grid (element_count) (height_per_row) (grid_size);
