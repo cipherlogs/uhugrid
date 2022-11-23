@@ -212,29 +212,51 @@ const template_span = index => col => row => factor => `
   }
 `;
 
-const get_grid_factor = width => {
-  const greater_than = x => gt (x) (width);
-  return (
-    greater_than (4096)
-    ? 512
+const is_divisable_by = x => y =>
+  y % x === 0;
+
+const get_optimal_grid_size = width => {
+  const gt = x => width > x;
+  const optimal_grid_size =
+    gt (4000)
+    ? 12
     : (
-      greater_than (3840)
-      ? 640
+      gt (3000)
+      ? 10
       : (
-        greater_than (2048)
-        ? 512
+        gt (2000)
+        ? 8
         : (
-          greater_than (1920)
-          ? 480
+          gt (1200)
+          ? 6
           : (
-            greater_than (1080)
-            ? 360
-            : greater_than (300) ? 200 : 150
+            gt (1000)
+            ? 4
+            : (
+              gt (600)
+              ? 3
+              : 2
+            )
           )
         )
       )
-    )
-  );
+    );
+
+  return optimal_grid_size;
+};
+
+const get_grid_factor = width => {
+  const grid_size = get_optimal_grid_size (width);
+
+  const divisors =
+    range (1) (grid_size)
+    .map (num => (x => is_divisable_by (num) (x) ? num : undefined))
+    .map (T (width))
+    .filter (x => (x !== undefined && x <= grid_size));
+
+  const divisor = last (divisors);
+
+  return width / divisor;
 };
 
 const update_grid = spec => {
