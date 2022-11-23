@@ -30,7 +30,7 @@ const gt = x => y => y > x;
 const eq = x => y => x === y;
 const nth = x => xs => xs[x];
 const head = xs => xs[0];
-const tail = xs => xs[xs.length - 1];
+const last = xs => xs[xs.length - 1];
 const is_zero = eq (0);
 const is_undef = eq (undefined);
 const length = x => x.length;
@@ -116,7 +116,7 @@ const inc_dec = acc => ([a, b]) => {
 
 const shuffle_ends = ys => {
   const shuffle = pipe ([
-    xs => inc_dec ([]) ([head (xs), tail (xs)]),
+    xs => inc_dec ([]) ([head (xs), last (xs)]),
     map (([a, b]) => [a, ...crop (ys), b]),
   ]);
 
