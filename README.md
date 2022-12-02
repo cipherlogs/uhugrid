@@ -6,13 +6,15 @@
 # UHU GRID
 Creative layouts like Masonry (Pinterest style) and Mosaic are used all over the web.
 
-**UHUGRID** is the best solution alternative if
+**UHUGRID** will work as a better alternative if
 
 + Each card contains little to no inner content
 + The number of cards is dynamic, unknown or might change in the future
 + You want the layout to be future-proof, so you never worry about code.
 
-Because of the above limitations, cards bound by their content dimension.
+<br>
+
+Because of the above limitations, cards are not bound by their content dimension.
 That's why it can do something none of the others could.
 **It generates visually appealing cards**
 by using aspect ratios suited best for the current screen size and
@@ -118,7 +120,7 @@ some important details before you override any styles.
 
 <br>
 
-### UHU
+# API
 
 The `uhu()` method controls the column size and the maximum height
 for each row.
