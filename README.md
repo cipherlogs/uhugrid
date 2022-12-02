@@ -4,16 +4,26 @@
 
 
 # UHU GRID
-Creative layouts like masonry (Pinterest style) and mosaic are used all over the web.
-**UHUGRID** is a new alternative
+Creative layouts like Masonry (Pinterest style) and Mosaic are used all over the web.
 
-It is fast and it offers something none of the above could offer.
-**It generates items that are visually appealing**
-by using aspect ratios that are suited best for the available free space.
+**UHUGRID** is the best solution alternative if
 
-Named *UHU* because of its default behaviour. Glue all items together
-and don't waste any free space.
-Everytime you refresh the page or request a layout change,
++ Each card contains little to no inner content
++ The number of cards is dynamic, unknown or might change in the future
++ You want the layout to be future-proof, so you never worry about code.
+
+Because of the above limitations, cards bound by their content dimension.
+That's why it can do something none of the others could.
+**It generates visually appealing cards**
+by using aspect ratios suited best for the current screen size and
+the available free space.
+
+Unlike other solutions where the dimension of each card determined by its content,
+UHUGrid has the luxury to generate what's aesthetic and good looking dimensions.
+
+Named *UHU* because of its default behavior. *Glue all items together
+and don't waste free space.*
+Every time you refresh the page or request a layout change,
 a new layout will be generated even if the screen size stays the same.
 
 <br>
