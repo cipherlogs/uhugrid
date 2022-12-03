@@ -23,7 +23,7 @@ That's why it can **generate visually appealing cards**
 by using aspect ratios suited best for the current screen size and
 the available free space.
 Unlike other solutions where the dimension of each card is determined by its content,
-UHUGrid has the luxury to generate sizes that look good and fit best.
+**UHUGRID** has the luxury to generate sizes that look good and fit best.
 
 Something that Masonry can't do.
 
@@ -93,7 +93,7 @@ and `.gallery__item` for all its children.
 
 The plugin only comes with the basic styling that are needed for
 it to function properly. It is up to you to style `.gallery__item`
-and its content the way want.
+and its content the way you want.
 
 Overriding `.gallery` and `.gallery__item` is the correct way
 the library was intended to be used.
@@ -108,9 +108,28 @@ some important details before you override any styles.
 The `uhu()` method controls the column size and the maximum height
 for each row.
 
+
+```JavaScript
+uhu();
+// everthing will be taken care of by default
+
+uhu(1, 1);
+// all grid items will have the same height
+// items width are always different and can't be controlled
+
+uhu(0, 2)
+// column width will be calculated according to the viewport width
+//
+// The row height is a range from 1 to 2
+// it could be 100px height or 200px height
+//
+// items width as always will be generated randomly to
+// aesthetically match the row height
+```
+
 #### Syntax
 
-> glue(column_size, maximum_row_height)
+> glue (column_size, maximum_row_height)
 
 
 #### Paramaters
@@ -128,23 +147,6 @@ for each row.
   `0` or `undefined` to let **UHUGRID** choose the most
   aesthetic height range related to column size.
   
-
-
-```JavaScript
-// everthing will be taken care of by default
-uhu();
-
-// all grid items will have the same height
-// items width are always different and can't be controlled
-uhu(1, 1);
-
-// column width will be calculated according to the viewport width,
-// and the row height is a range from 1 to 2
-// it could be 100px height or 200px height
-// items width as always will be generated randomly to
-// aesthetically match the row height
-uhu(0, 2)
-```
 
 <br>
 
