@@ -5,7 +5,12 @@
 
 # UHU GRID
 
-It works as the best alternative if
+Named *UHU* because of its default behavior. *Glue all items together
+and don't waste any free space.*
+Every time you refresh the page or request a layout change,
+a new layout will be generated even if the screen size stays the same.
+
+It works as a best alternative if
 
 + Each card contains little to no inner content
 + The number of cards are dynamic, unknown or might change in the future
@@ -17,50 +22,28 @@ Because of the above limitations, cards are not bound by their content dimension
 That's why it can **generate visually appealing cards**
 by using aspect ratios suited best for the current screen size and
 the available free space.
-
-Something that Masonry can't do.
-
 Unlike other solutions where the dimension of each card is determined by its content,
 UHUGrid has the luxury to generate sizes that look good and fit best.
 
-Named *UHU* because of its default behavior. *Glue all items together
-and don't waste any free space.*
-Every time you refresh the page or request a layout change,
-a new layout will be generated even if the screen size stays the same.
+Something that Masonry can't do.
 
 <br>
 
-+ hardly doing any calculation, fast and snappy 
-  no matter how many time a layout change is requested.
-
-+ No media queries were used and the layout is fully responsive
-  and it scales up to 4K displays or beyond.
-
-+ the item's order will always stay the same as your
-  HTML markup, unlike other solutions that uses
-  `grid-auto-flow: dense` or `flex-box`.
-
-<br>
-
-# How to
-Watch this walkthrough to understand some basics that might save you headaches later.
-
-[Watch on YouTube](https://youtu.be/PT3ZhB4-Y40)
-
+**To read more about speed comparison against native Masonry or other libraries
+read [FAQ](./FAQ.md).**
+  
 <br>
 
 # Live demo
 [Click here](https://cipherlogs.github.io/uhugrid/demo/)
 to access a simple live example of **UHUGRID**.
 
-<p align="center">
-  <img src="./imgs/1.jpg" alt="Gallery layout example">
-</p>
-
 <br>
 
-**PS:** the images that were used in the demo are low quality
-images, they are just there for demonstration purposes.
+# How to
+Watch this walkthrough to understand some basics that might save you time.
+
+[Watch on YouTube](https://youtu.be/PT3ZhB4-Y40)
 
 <br>
 
@@ -163,13 +146,11 @@ uhu(1, 1);
 uhu(0, 2)
 ```
 
-
 <br>
 
 # FAQ
 Visit [FAQ.md](./FAQ.md) to read common questions and design
 decisions.
-
 
 <br>
 
