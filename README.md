@@ -50,15 +50,12 @@ Watch this walkthrough to understand some basics that might save you time.
 # Install
 
 ### 1. CDN
+
 Just inject it in you HTML markup and the rest will be taken care of!
+make sure to read how to structure you markup so that it can get activated.
 
-```HTML
-<script
-  defer
-  src = "https://cdn.jsdelivr.net/npm/uhugrid@1.0.1/plug.min.js"
-
->
-</script>
+```
+https://cdn.jsdelivr.net/npm/uhugrid/plug.min.js
 ```
 
 <br>
@@ -129,7 +126,7 @@ uhu(0, 2)
 
 #### Syntax
 
-> glue (column_size, maximum_row_height)
+> uhu (column_size, maximum_row_height)
 
 
 #### Paramaters
