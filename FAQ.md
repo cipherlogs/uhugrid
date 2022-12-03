@@ -2,10 +2,40 @@
 
 <br>
 
+### How fast is it?
+The library isn't trying to achieve many things at once,
+instead focusing on one problem and solving it well.
+As a result, **UHUGRID** is hardly doing any calculations. It is fast and snappy.
+
+Tested against the native Masonry CSS and Masonry.js
+
+<br>
+
+### Is it responsive?
+Behind the scenes, the library was implemented in a way
+where breakpoints (media queries) were useless.
+Thus making it more responsive to any device.
+
+It scales up to 4K (beyond 4K the user has full control over the settings)
+
+<br>
+
+### Does it keep my HTML markup order?
+Yes, the item's order will always stay the same as your HTML markup,
+the library isn't relying on `grid-auto-flow: dense` or `flexbox`.
+
+<br>
+
 ### Does it work for everything?
 No layout will, it depends on your design requirements.
-**UHUGRID** is perfect if you don't have too much text to fit in a box
+**UHUGRID** is perfect if you don't have too much text to fit in each card
 or if you have a gallery of images. 
+
+<br>
+
+### Can I save a generated layout?
+No, if you find yourself wanting to lock on a specific generated layout.
+That means you content isn't dynamic. maybe instead just use pure CSS.
 
 <br>
 
