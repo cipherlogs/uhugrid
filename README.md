@@ -66,11 +66,6 @@ https://cdn.jsdelivr.net/npm/uhugrid/plug.min.js
 $ npm install --save-dev uhugrid
 ```
 
-```JavaScript
-import {uhu} from "uhugrid";
-```
-
-
 <br>
 
 # Usage
@@ -87,6 +82,7 @@ and `.gallery__item` for all its children.
 
 </div>
 ```
+<br>
 
 The plugin only comes with the basic styling that are needed for
 it to function properly. It is up to you to style `.gallery__item`
