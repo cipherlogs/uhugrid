@@ -31,6 +31,7 @@ that fit best for the current screen size and available free space.
 see the [FAQ](.FAQ.md).**
   
 <br>
+<br>
 
 # Live demo
 To access a simple live example [Click here](https://cipherlogs.github.io/uhugrid/demo/)
@@ -42,6 +43,7 @@ Watch this walkthrough to understand some basics that might save you time.
 
 [Watch on YouTube](https://youtu.be/PT3ZhB4-Y40)
 
+<br>
 <br>
 
 # Install
@@ -64,6 +66,7 @@ $ npm install --save-dev uhugrid
 ```
 
 <br>
+<br>
 
 # Usage
 `.gallery` for the parent container
@@ -81,14 +84,14 @@ and `.gallery__item` for all its children.
 ```
 <br>
 
-The plugin only comes with the basic styling needed for it to function properly.
-It is up to you to style `.gallery__item` and its content the way you want. 
+The plugin comes with the basic styling necessary for it to work properly. 
+You are responsible for styling `.gallery__item` and its content as you desire. 
 
-Overriding `.gallery` and `.gallery__item` is the correct way
-the library was intended to be used.
-Please watch the [**How to**](#how-to) video, to understand
+Overriding `.gallery` and `.gallery__item` is the correct way to use the library.
+Please watch the [**How to**](#how-to) video to understand
 some important details before you override any styles.
 
+<br>
 <br>
 
 # API
@@ -137,11 +140,13 @@ uhu(0, 2)
   
 
 <br>
+<br>
 
 # FAQ
 Visit [FAQ.md](./FAQ.md) to read common questions and design
 decisions.
 
+<br>
 <br>
 
 # Changes
@@ -150,6 +155,7 @@ decisions.
 + visit [CHANGELOG.md](./CHANGELOG.md) for more information about
   each release.
 
+<br>
 <br>
 
 # License
