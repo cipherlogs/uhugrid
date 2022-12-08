@@ -3,40 +3,37 @@
 <br>
 
 
-# UHU GRID
+# Why?
 
-Named *UHU* because of its default behavior. *Glue all items together
-and don't waste any free space.*
-Every time you refresh the page or request a layout change,
-a new layout will be generated even if the screen size stays the same.
+**UHUGRID** is named for its default behavior of gluing all items together
+and not wasting any free space.
 
-It works as a best alternative if
+Every time the page is refreshed or a layout change is requested,
+a new layout is generated, even if the screen size stays the same.
+
+It is the best alternative when:
 
 + Each card contains little to no inner content
-+ The number of cards are dynamic, unknown or might change in the future
-+ You want the layout to be future-proof, so you'll never worry about code maintenance.
++ The number of cards is dynamic, unknown, or might change in the future
++ You want the layout to be future-proof so you never have to worry about code maintenance
 
 <br>
 
-Because of the above limitations, cards are not bound by their content dimensions.
-That's why it can **generate visually appealing cards**
-by using aspect ratios suited best for the current screen size and
-the available free space.
-Unlike other solutions where the dimension of each card is determined by its content,
-**UHUGRID** has the luxury to generate sizes that look good and fit best.
+Due to these limitations, cards are not bound by their content dimensions.
+This allows **UHUGRID** to generate visually appealing cards using aspect ratios
+that fit best for the current screen size and available free space.
 
-Something that Masonry can't do.
+*This is something that Masonry cannot do.*
 
 <br>
 
-**To read more about speed comparison against native Masonry or other libraries
-read [FAQ](./FAQ.md).**
+**For more information about speed comparison against native Masonry or other libraries,
+see the [FAQ](.FAQ.md).**
   
 <br>
 
 # Live demo
-[Click here](https://cipherlogs.github.io/uhugrid/demo/)
-to access a simple live example of **UHUGRID**.
+To access a simple live example [Click here](https://cipherlogs.github.io/uhugrid/demo/)
 
 <br>
 
@@ -52,7 +49,7 @@ Watch this walkthrough to understand some basics that might save you time.
 ### 1. CDN
 
 Just inject it in you HTML markup and the rest will be taken care of!
-make sure to read how to structure you markup so that it can get activated.
+Make sure to read about how to structure you markup so that it can be activated.
 
 ```
 https://cdn.jsdelivr.net/npm/uhugrid/plug.min.js
@@ -84,15 +81,13 @@ and `.gallery__item` for all its children.
 ```
 <br>
 
-The plugin only comes with the basic styling that are needed for
-it to function properly. It is up to you to style `.gallery__item`
-and its content the way you want.
+The plugin only comes with the basic styling needed for it to function properly.
+It is up to you to style `.gallery__item` and its content the way you want. 
 
 Overriding `.gallery` and `.gallery__item` is the correct way
 the library was intended to be used.
 Please watch the [**How to**](#how-to) video, to understand
 some important details before you override any styles.
-
 
 <br>
 
