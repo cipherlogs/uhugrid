@@ -32,10 +32,15 @@ see the [FAQ](.FAQ.md).**
   
 <br>
 <br>
+<br>
+<br>
 
 # Live demo
 To access a simple live example [Click here](https://cipherlogs.github.io/uhugrid/demo/)
 
+<br>
+<br>
+<br>
 <br>
 
 # How to
@@ -45,17 +50,19 @@ Watch this walkthrough to understand some basics that might save you time.
 
 <br>
 <br>
+<br>
+<br>
 
 # Install
 
 ### 1. CDN
 
-Just inject it in you HTML markup and the rest will be taken care of!
-Make sure to read about how to structure you markup so that it can be activated.
-
 ```
 https://cdn.jsdelivr.net/npm/uhugrid/plug.min.js
 ```
+
+Just inject it in you HTML markup and the rest will be taken care of!
+Make sure to read about how to structure your markup so that it can be activated.
 
 <br>
 
@@ -65,6 +72,8 @@ https://cdn.jsdelivr.net/npm/uhugrid/plug.min.js
 $ npm install --save-dev uhugrid
 ```
 
+<br>
+<br>
 <br>
 <br>
 
@@ -91,6 +100,8 @@ Overriding `.gallery` and `.gallery__item` is the correct way to use the library
 Please watch the [**How to**](#how-to) video to understand
 some important details before you override any styles.
 
+<br>
+<br>
 <br>
 <br>
 
@@ -141,11 +152,15 @@ uhu(0, 2)
 
 <br>
 <br>
+<br>
+<br>
 
 # FAQ
 Visit [FAQ.md](./FAQ.md) to read common questions and design
 decisions.
 
+<br>
+<br>
 <br>
 <br>
 
@@ -155,6 +170,8 @@ decisions.
 + visit [CHANGELOG.md](./CHANGELOG.md) for more information about
   each release.
 
+<br>
+<br>
 <br>
 <br>
 
