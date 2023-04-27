@@ -13,9 +13,9 @@ a new layout is generated, even if the screen size stays the same.
 
 It is the best alternative when:
 
-+ Each card contains little to no inner content
-+ The number of cards is dynamic, unknown, or might change in the future
-+ You want the layout to be future-proof so you never have to worry about code maintenance
+1. Each card contains little to no inner content
+2. The number of cards is dynamic, unknown, or might change in the future
+3. You want the layout to be future-proof so you never have to worry about code maintenance
 
 <br>
 
@@ -23,12 +23,13 @@ Due to these limitations, cards are not bound by their content dimensions.
 This allows **UHUGRID** to generate visually appealing cards using aspect ratios
 that fit best for the current screen size and available free space.
 
-*This is something that Masonry cannot do.*
+**This is something that Masonry cannot do.**
 
 <br>
+<br>
 
-**For more information about speed comparison against native Masonry or other libraries,
-see the [FAQ](.FAQ.md).**
+*For more information about speed comparison against native Masonry or other libraries,
+see the [FAQ](.FAQ.md).*
   
 <br>
 <br>
