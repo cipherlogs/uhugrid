@@ -29,7 +29,7 @@ that fit best for the current screen size and available free space.
 <br>
 
 *For more information about speed comparison against native Masonry or other libraries,
-see the [FAQ](.FAQ.md).*
+see the [FAQ](FAQ.md).*
   
 <br>
 <br>
