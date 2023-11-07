@@ -1,4 +1,4 @@
-![UHUGRID poster](./imgs/uhu.png)
+![UHUGRID poster](./imgs/2.jpg)
 
 <br>
 
